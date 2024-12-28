@@ -1,0 +1,469 @@
+mouseWheel:
+  closed: false
+  currentObservers: null
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+elementDraw:
+  closed: false
+  currentObservers: null
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+snapSettings:
+  constraints: 16
+serializationSettings:
+  preventDefaults: true
+contextMenuSettings:
+  show: true
+  items:
+    - text: Edit
+      id: edit
+      target: .e-elementcontent
+      iconCss: fa fa-cogs
+    - text: Callout To
+      id: callout
+      target: .e-elementcontent
+      iconCss: fa fa-crosshairs
+    - text: Increase font size ↑
+      id: increaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Decrease font size ↓
+      id: decreaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Bold
+      id: boldText
+      target: .e-elementcontent
+      iconCss: fa fa-bold
+    - text: Italicize
+      id: italicizeText
+      target: .e-elementcontent
+      iconCss: fa fa-italic
+    - text: Fill
+      id: fill
+      target: .e-elementcontent
+      iconCss: fa fa-tint
+    - text: Highlight
+      id: highlight
+      target: .e-elementcontent
+      iconCss: fa fa-lightbulb-o
+    - text: Collapse to square
+      id: collapseToSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to named square
+      id: collapseToNamedSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to circle
+      id: collapseToCircle
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Expand
+      id: expand
+      target: .e-elementcontent
+      iconCss: fa fa-expand
+    - text: Bring to front
+      id: front
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-up
+    - text: Bring forward
+      id: forward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-up
+    - text: Send backward
+      id: backward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-down
+    - text: Send to back
+      id: back
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-down
+    - text: Remove
+      id: remove
+      target: .e-elementcontent
+      iconCss: fa fa-times
+  showCustomMenuOnly: true
+tool: 5
+scrollSettings:
+  scrollLimit: Infinity
+  viewPortWidth: 930
+  viewPortHeight: 603
+  horizontalOffset: 29
+  verticalOffset: -57
+addInfo:
+  currencyText: USD ($)
+  currencySymbol: $
+  selectedViewType: 0
+height: 603
+nodes:
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #353A86;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Kubeflow_Black_87_pknfq4.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Kubeflow_uzs5wk.webp);"></div><div
+        class="c-text"><div class="c-title">Kubeflow</div><div
+        class="c-short-description">Deploying and managing scalable machine
+        learning workflows in Kubernetes</div><div class="c-bottom"><div
+        class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Kubeflow</div></div></div></div></div>'
+    id: KubeflowrAg0o
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Kubeflow
+        shortDescription: Deploying and managing scalable machine learning workflows in
+          Kubernetes
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Kubeflow
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Kubeflow
+      editableName: Kubeflow
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Training Pipeline
+          type: Processor
+          portsIn:
+            job: model
+          portsOut:
+            job: model
+          serviceTime:
+            exp:
+              lambda: AverageTrainingDuration
+        - name: IDE
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: commit
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenCommits
+        - name: Deployment Tool
+          type: Processor
+          portsIn:
+            job: deployable
+          portsOut:
+            job: deployed
+          serviceTime:
+            exp:
+              lambda: AverageDeploymentDuration
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Training Pipeline
+          AverageTrainingDuration: 1
+        - type: Generator
+          status: Idle
+          name: IDE
+          AverageTimeBetweenCommits: 1
+        - type: Processor
+          status: Idle
+          name: Deployment Tool
+          AverageDeploymentDuration: 1
+      name: Kubeflow
+      category: 10
+      imgUrl: https://static.softwaresim.com/logos/webp/Kubeflow_uzs5wk.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Kubeflow__0484848_v0ybbn.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Kubeflow_Black_87_pknfq4.webp
+      color: "#353A86"
+      controlText: Kubeflow
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 282
+    offsetY: 227
+    zIndex: 0
+    outEdges:
+      - Dashed Straight ConnectorGES31
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/vertexai_Black_87_vxjlos.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/vertexai_lkhlnv.webp);"></div><div
+        class="c-text"><div class="c-title">Vertex AI Pipelines</div><div
+        class="c-short-description">Deploying, building, and managing machine
+        learning models</div><div class="c-bottom"><div class="c-hr
+        p-mb-1"></div><div class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Google Vertex AIZilV7
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google Vertex AI
+        shortDescription: Deploying, building, and managing machine learning models
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google Vertex AI
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google Vertex AI
+      editableName: Vertex AI Pipelines
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google Vertex AI
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/vertexai_lkhlnv.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/vertexai__044448_bktfch.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/vertexai_Black_87_vxjlos.webp
+      color: "#3871e0"
+      controlText: Vertex AI
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 632
+    offsetY: 227
+    zIndex: 1
+    inEdges:
+      - Dashed Straight ConnectorGES31
+      - Orthogonal ConnectorNtPdX
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/vertexai_Black_87_vxjlos.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/vertexai_lkhlnv.webp);"></div><div
+        class="c-text"><div class="c-title">Vertex AI Workbench</div><div
+        class="c-short-description">Workbench for Jupyter notebooks (managed,
+        scalable)</div><div class="c-bottom"><div class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Google Vertex AIvNhg1
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google Vertex AI
+        shortDescription: Workbench for Jupyter notebooks (managed, scalable)
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google Vertex AI
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google Vertex AI
+      editableName: Vertex AI Workbench
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google Vertex AI
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/vertexai_lkhlnv.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/vertexai__044448_bktfch.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/vertexai_Black_87_vxjlos.webp
+      color: "#3871e0"
+      controlText: Vertex AI
+      selectedDynamicsView: 0
+      location: "[GCP] us-central1"
+      latitude: 41.26194
+      longitude: -95.86083
+    width: 300
+    height: 100
+    offsetX: 419
+    offsetY: 392
+    zIndex: 3
+    outEdges:
+      - Orthogonal ConnectorNtPdX
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #BA5512; border-radius:
+        50%"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Jupyter_Black_87_uahk2k.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Jupyter_lm2xh2.webp);
+        border-radius: 50%"></div></div></div>'
+    id: JupytermhTEO
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Jupyter
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Jupyter
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Jupyter
+      editableName: Jupyter
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: IDE
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: request
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenRequests
+      dynamicsViews:
+        - type: Generator
+          status: Idle
+          name: IDE
+          AverageTimeBetweenRequests: 1
+      name: Jupyter
+      category: 10
+      imgUrl: https://static.softwaresim.com/logos/webp/Jupyter_lm2xh2.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Jupyter__044448_fyi1ig.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Jupyter_Black_87_uahk2k.webp
+      color: "#BA5512"
+      controlText: Jupyter
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: false
+      collapsedToCircle: true
+    width: 100
+    height: 100
+    offsetX: 599
+    offsetY: 410
+    zIndex: 4
+connectors:
+  - id: Dashed Straight ConnectorGES31
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 432
+      y: 227
+    targetPoint:
+      x: 482
+      y: 227
+    sourceID: KubeflowrAg0o
+    targetID: Google Vertex AIZilV7
+    addInfo:
+      viewConnector: 0
+    zIndex: 2
+  - id: Orthogonal ConnectorNtPdX
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 419
+      y: 342
+    targetPoint:
+      x: 632
+      y: 277
+    sourceID: Google Vertex AIvNhg1
+    targetID: Google Vertex AIZilV7
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 6
+selectedItems:
+  width: 0
+  height: 0
